@@ -7,8 +7,8 @@ public class Test {
         PythonInterpreter interpreter = new PythonInterpreter();
         interpreter.execfile("src/main/java/com/roadking/roadmanager/temp/test.py");
         interpreter.execfile("src/main/java/com/roadking/roadmanager/temp/test2.py");
-        interpreter.exec("say('jinu byungsin')");
-        interpreter.exec("say2('jinu byungsin')");
+        interpreter.exec("say('hi jython')");
+        interpreter.exec("say2('hi everyone')");
 
     }
 }
