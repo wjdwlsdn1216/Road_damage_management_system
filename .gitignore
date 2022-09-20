@@ -265,7 +265,7 @@ fabric.properties
 
 
 
-### Java ###
+### Java ####
 # Compiled class file
 *.class
 
