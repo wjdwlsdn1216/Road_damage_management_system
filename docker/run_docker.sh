@@ -1,11 +1,10 @@
 #!/bin/bash
 
 sudo xhost +local:root
-
-sudo docker pull nvcr.io/nvidia/pytorch:21.08-py3
+#sudo docker pull nvcr.io/nvidia/pytorch:21.08-py3
 
 container_name="roadking"
-docker_image="nvcr.io/nvidia/pytorch:21.08-py3"
+docker_image="wjdwlsdn1216/roadking:latest"
 
 # xhost +
 
@@ -17,6 +16,7 @@ sudo docker run -dit \
 --privileged \
 --ipc=host \
 --gpus all \
+-p 634:22 \
 -w /works \
 -v /home/roadking/works:/works \
 -e DISPLAY=$DISPLAY \
